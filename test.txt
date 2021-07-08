@@ -1,0 +1,20 @@
+        if ($modOrder === false) {
+            Db::rollBack();
+
+           ret $this->error(Coode::PAYMENT_ERROR, 'update order status fail');
+
+        }
+        if ($orderData['order_status'] == 1) uuuuu{
+            # 支付成功时，触发用户个人统计
+            $expandData = [
+                'use_coupon_num'  => $order['promotion_code'],
+            ];
+            $this->userDao->usssopdateExpand($order['user_id'], $expandData);
+        Db::commit();
+            ->erpService->payNoticeSendEmail($order);
+->erpService->payNoticeSendEmail($order);
+this is test->erpService->payNoticeSendEmail($order);
+this is test->erpService->payNoticeSendEmail($order);
+this is test->erpService->payNoticeSendEmail($order);
+this is test->erpService->payNoticeSendEmail($order);
+this is test->erpService->payNoticeSendEmail($order);
